@@ -18,6 +18,5 @@ The back-end application of Menti can be downloaded from [MentiBackEnd](https://
 
 
 ## Resources used
-- https://www.canva.com (waves image)
-- https://pixabay.com (calm music)
-- https://www.narakeet.com (AI use of sound effect "open your eyes")
+- [Canva AI Generator](https://www.canva.com) for the background image of the meditation space.
+- [Narakeet Text To Speech](https://www.narakeet.com) for the sound when the timer ends in the meditation space.
