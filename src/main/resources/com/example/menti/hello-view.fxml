@@ -155,7 +155,7 @@
                </ImageView>
                <Label layoutX="290.0" layoutY="200.0" prefHeight="22.0" prefWidth="107.0" text="Feedbacks">
                   <font>
-                     <Font name="Arial Bold Italic" size="18.0" />
+                     <Font name="Arial Bold Italic" size="14.0" />
                   </font>
                </Label>
                <JFXButton fx:id="generate_feedback" layoutX="296.0" layoutY="367.0" prefHeight="22.0" prefWidth="74.0" onAction="#generate_feedback"  styleClass="generate_feedback" text="Generate">

@@ -4,14 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1cecfc4-aca4-4c26-b605-ed5db6874720" name="Changes" comment="implement backend system">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/menti/MeditationGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/menti/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/menti/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/menti/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/menti/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/images/1422923.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/images/ai.png" beforeDir="false" />
+    <list default="true" id="c1cecfc4-aca4-4c26-b605-ed5db6874720" name="Changes" comment="update latest version of backend and frontend code">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/menti/hello-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/menti/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,7 +120,7 @@
       <workItem from="1706454380959" duration="50000" />
       <workItem from="1706454452318" duration="940000" />
       <workItem from="1706456190439" duration="1662000" />
-      <workItem from="1706457922952" duration="4508000" />
+      <workItem from="1706457922952" duration="4949000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -143,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706461279503</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update latest version of backend and frontend code">
+      <option name="closed" value="true" />
+      <created>1706462485702</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706462485702</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update latest version of backend and frontend code">
+      <option name="closed" value="true" />
+      <created>1706462491879</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1706462491879</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -163,6 +174,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
     <MESSAGE value="implement backend system" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement backend system" />
+    <MESSAGE value="update latest version of backend and frontend code" />
+    <option name="LAST_COMMIT_MESSAGE" value="update latest version of backend and frontend code" />
   </component>
 </project>

@@ -35,9 +35,6 @@
 .sleepPane {
     -fx-background-color: #C8B2B2;
 }
-.meditationPane{
-    -fx-background-color: #C587C9;
-}
 .startButton{
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-radius: 20px;
@@ -50,4 +47,18 @@
     -fx-border-radius: 20px;
     -fx-background-radius: 20px;
     -fx-border-style: solid;
+}
+.generate_feedback{
+    -fx-background-color: #A1EE69;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-border-style: solid;
+}
+.meditationPane {
+    -fx-background-color: linear-gradient(to right, lightsteelblue, lightgreen);
+    -fx-background-size: 100% 150%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 0% 100%;
+    -fx-animation: gradientAnimation 3s infinite alternate;
 }
