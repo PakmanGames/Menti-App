@@ -75,30 +75,6 @@
          </children>
       </VBox>
       <StackPane>
-         <Pane fx:id="sleepPane" prefHeight="200.0" prefWidth="200.0" styleClass="sleepPane" stylesheets="@style.css" visible="false">
-            <children>
-               <BarChart fx:id="BarChart" layoutX="68.0" layoutY="-6.0" prefHeight="257.0" prefWidth="311.0">
-                  <xAxis>
-                     <CategoryAxis side="BOTTOM" fx:id="x" />
-                  </xAxis>
-                  <yAxis>
-                     <NumberAxis fx:id="y" side="LEFT" />
-                  </yAxis>
-               </BarChart>
-               <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
-                  <image>
-                     <Image url="@images/ai.png" />
-                  </image>
-               </ImageView>
-            </children></Pane>
-         <Pane fx:id="meditationPane" prefHeight="200.0" prefWidth="200.0" styleClass="meditationPane" stylesheets="@style.css" visible="false">
-            <children>
-               <JFXButton fx:id="startButton" layoutX="193.0" layoutY="175.0" onAction="#startButton" styleClass="startButton" text="Start">
-                  <font>
-                     <Font name="Apple SD Gothic Neo ExtraBold" size="20.0" />
-                  </font>
-               </JFXButton>
-            </children></Pane>
          <Pane fx:id="activitiesPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="464.0" styleClass="activitiesPane" stylesheets="@style.css">
             <children>
                <Pane fx:id="check_list" layoutX="7.0" layoutY="113.0" prefHeight="285.0" prefWidth="197.0" styleClass="check_list">
@@ -131,18 +107,6 @@
                      <Font name="System Bold Italic" size="17.0" />
                   </font>
                </Label>
-               <AnchorPane fx:id="weekly_trend" layoutX="221.0" layoutY="42.0" prefHeight="147.0" prefWidth="243.0" styleClass="weekly_trend">
-                  <children>
-                     <LineChart fx:id="LineChart" layoutX="-7.0" layoutY="4.0" prefHeight="150.0" prefWidth="236.0">
-                        <xAxis>
-                           <CategoryAxis fx:id="x" />
-                        </xAxis>
-                        <yAxis>
-                           <NumberAxis fx:id="y" />
-                        </yAxis>
-                     </LineChart>
-                  </children>
-               </AnchorPane>
                <Label layoutX="15.0" layoutY="85.0" text="Today,">
                   <font>
                      <Font name="System Bold Italic" size="13.0" />
@@ -158,14 +122,76 @@
                      <Font name="Arial Bold Italic" size="18.0" />
                   </font>
                </Label>
+<<<<<<< HEAD
+               <JFXButton fx:id="generate_feedback" layoutX="296.0" layoutY="367.0" prefHeight="22.0" prefWidth="74.0" styleClass="generate_feedback" text="Generate">
+=======
                <JFXButton fx:id="generate_feedback" layoutX="296.0" layoutY="367.0" prefHeight="22.0" prefWidth="74.0" onAction="#generate_feedback"  styleClass="generate_feedback" text="Generate">
+>>>>>>> 712c4ff (Final)
                   <font>
                      <Font name="Apple Symbols" size="13.0" />
                   </font>
                </JFXButton>
+               <AnchorPane fx:id="weekly_trend" layoutX="221.0" layoutY="42.0" prefHeight="147.0" prefWidth="243.0" styleClass="weekly_trend">
+                  <children>
+                     <LineChart fx:id="LineChart" layoutX="-7.0" layoutY="4.0" prefHeight="150.0" prefWidth="236.0">
+<<<<<<< HEAD
+                       <xAxis>
+                         <CategoryAxis fx:id="x" />
+                       </xAxis>
+                       <yAxis>
+                         <NumberAxis fx:id="y" />
+                       </yAxis>
+=======
+                        <xAxis>
+                           <CategoryAxis fx:id="x" />
+                        </xAxis>
+                        <yAxis>
+                           <NumberAxis fx:id="y" />
+                        </yAxis>
+>>>>>>> 712c4ff (Final)
+                     </LineChart>
+                  </children>
+               </AnchorPane>
             </children>
          </Pane>
+         <Pane fx:id="sleepPane" prefHeight="200.0" prefWidth="200.0" styleClass="sleepPane" stylesheets="@style.css" visible="false">
+            <children>
+               <BarChart fx:id="BarChart" layoutX="68.0" layoutY="-6.0" prefHeight="257.0" prefWidth="311.0">
+<<<<<<< HEAD
+                 <xAxis>
+                   <CategoryAxis side="BOTTOM" fx:id="x" />
+                 </xAxis>
+                 <yAxis>
+                   <NumberAxis fx:id="y" side="LEFT" />
+                 </yAxis>
+=======
+                  <xAxis>
+                     <CategoryAxis side="BOTTOM" fx:id="x" />
+                  </xAxis>
+                  <yAxis>
+                     <NumberAxis fx:id="y" side="LEFT" />
+                  </yAxis>
+>>>>>>> 712c4ff (Final)
+               </BarChart>
+               <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/ai.png" />
+                  </image>
+               </ImageView>
+            </children></Pane>
+         <Pane fx:id="meditationPane" prefHeight="200.0" prefWidth="200.0" styleClass="meditationPane" stylesheets="@style.css" visible="false">
+            <children>
+               <JFXButton fx:id="startButton" layoutX="195.0" layoutY="164.0" onAction="#startButton" styleClass="startButton" text="Start">
+                  <font>
+                     <Font name="Apple SD Gothic Neo ExtraBold" size="20.0" />
+                  </font>
+               </JFXButton>
+            </children></Pane>
          <!-- Add other panes similarly -->
       </StackPane>
    </children>
+<<<<<<< HEAD
 </HBox>
+=======
+</HBox>
+>>>>>>> 712c4ff (Final)
