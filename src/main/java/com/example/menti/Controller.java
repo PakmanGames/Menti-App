@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 import com.jfoenix.controls.JFXTextArea;
 
 public class Controller {
+   // List to store user input from checklists
    private List<String> checklistItems = new ArrayList<>();
 
    @FXML
@@ -32,7 +33,7 @@ public class Controller {
    @FXML
    public JFXTextArea suggestions;
 
-   public String[] infoArray = new String[100];
+   // String to store the response received from gpt-3.5-turbo
    public String response;
 
    @FXML
@@ -90,7 +91,7 @@ public class Controller {
          checkBox.setLayoutY(newYPosition);
          check_list.getChildren().add(checkBox);
 
-         // Add the entered text to the list
+         // Add the info on check box to list
          checklistItems.add(text);
       });
    }
@@ -100,6 +101,7 @@ public class Controller {
       return Math.max(index * spacing, 0);
    }
 
+   // converts the list into a string array
    public String[] getChecklistItemsArray() {
       return checklistItems.toArray(new String[0]);
    }
