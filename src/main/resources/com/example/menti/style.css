@@ -1,0 +1,53 @@
+.root{
+    -fx-background-color: #FFFFFF;
+}
+.side_panel{
+    -fx-background-color: #353A56;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 0px;
+    -fx-background-radius: 0px;
+    -fx-border-style: solid;
+}
+.profile_panel{
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.check_list{
+    -fx-background-color: #8FC5EB;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.weekly_trend{
+    -fx-background-color: #F0E08A;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-color: #000000;
+}
+.activitiesPane{
+    -fx-background-color: #B2EAF1;
+}
+.sleepPane {
+    -fx-background-color: #C8B2B2;
+}
+.meditationPane{
+    -fx-background-color: #C587C9;
+}
+.startButton{
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}
+.suggestion{
+    -fx-background-color: #FFFFFF;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-style: solid;
+}

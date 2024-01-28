@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="root" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.menti.Controller">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="130.0">
+         <children>
+            <AnchorPane fx:id="side_panel" prefHeight="405.0" prefWidth="130.0" styleClass="side_panel" stylesheets="@style.css">
+               <children>
+                  <JFXButton layoutX="3.0" layoutY="83.0" onAction="#activityButton" prefHeight="26.0" prefWidth="130.0" text="Activities" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/activities.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font></JFXButton>
+                  <JFXButton layoutY="139.0" onAction="#sleepButton" prefHeight="26.0" prefWidth="130.0" text="Sleep" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/1422923.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton layoutX="3.0" layoutY="194.0" onAction="#meditationButton" prefHeight="26.0" prefWidth="130.0" text="Meditation" textFill="WHITE">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/exercise.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton fx:id="profile_panel" layoutX="3.0" layoutY="6.0" prefHeight="42.0" prefWidth="130.0" styleClass="profile_panel" stylesheets="@style.css" text="Profile">
+                     <font>
+                        <Font name="System Bold Italic" size="16.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/user-image-with-black-background.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <StackPane>
+         <Pane fx:id="sleepPane" prefHeight="200.0" prefWidth="200.0" styleClass="sleepPane" stylesheets="@style.css" visible="false">
+            <children>
+               <BarChart layoutX="68.0" layoutY="-6.0" prefHeight="257.0" prefWidth="311.0">
+                 <xAxis>
+                   <CategoryAxis side="BOTTOM" />
+                 </xAxis>
+                 <yAxis>
+                   <NumberAxis side="LEFT" />
+                 </yAxis>
+               </BarChart>
+               <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/ai.png" />
+                  </image>
+               </ImageView>
+            </children></Pane>
+         <Pane fx:id="meditationPane" prefHeight="200.0" prefWidth="200.0" styleClass="meditationPane" stylesheets="@style.css" visible="false">
+            <children>
+               <JFXButton fx:id="startButton" layoutX="193.0" layoutY="175.0" onAction="#startButton" styleClass="startButton" text="Start">
+                  <font>
+                     <Font name="Apple SD Gothic Neo ExtraBold" size="20.0" />
+                  </font>
+               </JFXButton>
+            </children></Pane>
+         <Pane fx:id="activitiesPane" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="464.0" styleClass="activitiesPane" stylesheets="@style.css">
+            <children>
+               <Pane fx:id="check_list" layoutX="7.0" layoutY="113.0" prefHeight="285.0" prefWidth="197.0" styleClass="check_list">
+                  <children>
+                     <JFXButton buttonType="RAISED" layoutX="53.0" layoutY="244.0" onAction="#addList" prefHeight="17.0" prefWidth="91.0" text="Goal" wrapText="true">
+                        <graphic>
+                           <ImageView fitHeight="25.0" fitWidth="18.0" pickOnBounds="true" preserveRatio="true">
+                              <image>
+                                 <Image url="@images/add-contact.png" />
+                              </image>
+                           </ImageView>
+                        </graphic>
+                        <font>
+                           <Font name="System Bold Italic" size="13.0" />
+                        </font>
+                     </JFXButton>
+                  </children>
+               </Pane>
+               <Label layoutX="7.0" layoutY="14.0" text="Daily Activities" textAlignment="CENTER" wrapText="true">
+                  <font>
+                     <Font name="Kohinoor Telugu Bold" size="24.0" />
+                  </font>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+               </Label>
+               <Label layoutX="283.0" layoutY="10.0" text="Weekly Trends">
+                  <font>
+                     <Font name="System Bold Italic" size="17.0" />
+                  </font>
+               </Label>
+               <Pane fx:id="weekly_trend" layoutX="222.0" layoutY="42.0" prefHeight="150.0" prefWidth="243.0" styleClass="weekly_trend" stylesheets="@style.css">
+                  <children>
+                     <LineChart layoutX="10.0" layoutY="-6.0" prefHeight="160.0" prefWidth="221.0">
+                        <xAxis>
+                           <CategoryAxis side="BOTTOM" />
+                        </xAxis>
+                        <yAxis>
+                           <NumberAxis side="LEFT" />
+                        </yAxis>
+                     </LineChart>
+                  </children>
+               </Pane>
+               <Label layoutX="15.0" layoutY="85.0" text="Today,">
+                  <font>
+                     <Font name="System Bold Italic" size="13.0" />
+                  </font>
+               </Label>
+               <JFXTextArea fx:id="suggestions" layoutX="222.0" layoutY="231.0" prefHeight="166.0" prefWidth="243.0" styleClass="suggestion" />
+               <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="232.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@images/ai.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="290.0" layoutY="200.0" prefHeight="22.0" prefWidth="107.0" text="Feedbacks">
+                  <font>
+                     <Font name="Arial Bold Italic" size="18.0" />
+                  </font>
+               </Label>
+            </children>
+         </Pane>
+         <!-- Add other panes similarly -->
+      </StackPane>
+   </children>
+</HBox>
