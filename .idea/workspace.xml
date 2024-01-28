@@ -5,8 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c1cecfc4-aca4-4c26-b605-ed5db6874720" name="Changes" comment="update latest version of backend and frontend code">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/menti/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/menti/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/menti/ScrollBack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/menti/ScrollBack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/medSource/mindfulness-relaxation-amp-meditation-music-22174.wav" beforeDir="false" afterPath="$PROJECT_DIR$/medSource/mindfulness-relaxation-amp-meditation-music-22174.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/medSource/src_medSource_Open Your Eyes.wav" beforeDir="false" afterPath="$PROJECT_DIR$/medSource/src_medSource_Open Your Eyes.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/medSource/waves_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/medSource/waves_1.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,12 +54,13 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Application.App.executor": "Run",
     "Application.HelloApplication.executor": "Run",
+    "Application.ScrollBack.executor": "Run",
     "Maven.Menti [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Keewe/Downloads/MentiApp/Menti-main",
+    "last_opened_file_path": "C:/GitHubFiles/Moonlighter project/Moonlighter By Andy Pak & Mustafa Merchant",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -75,11 +79,11 @@
       <recent name="$PROJECT_DIR$/src/main/java/com/example/menti" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Keewe\Downloads\MentiApp\Menti-main" />
+      <recent name="C:\Users\Keewe\Downloads\MentiApp\Menti-main\src\medSource" />
       <recent name="C:\Users\Keewe\Downloads\MentiApp\Menti-main\src\main\resources\com\example\menti\images" />
       <recent name="C:\Users\Keewe\Downloads\MentiApp\Menti-main\src\main\java\com\example\menti" />
       <recent name="$PROJECT_DIR$/src/main/java/com/example/menti" />
-      <recent name="$PROJECT_DIR$/src/main/resources/com/example/menti" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager">
@@ -120,7 +124,7 @@
       <workItem from="1706454380959" duration="50000" />
       <workItem from="1706454452318" duration="940000" />
       <workItem from="1706456190439" duration="1662000" />
-      <workItem from="1706457922952" duration="4949000" />
+      <workItem from="1706457922952" duration="6648000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
@@ -154,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706462491879</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="update latest version of backend and frontend code">
+      <option name="closed" value="true" />
+      <created>1706463006029</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1706463006030</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
