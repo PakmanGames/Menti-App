@@ -36,7 +36,11 @@
     -fx-background-color: #C8B2B2;
 }
 .meditationPane{
-    -fx-background-color: #C587C9;
+    -fx-background-color: linear-gradient(to right, lightsteelblue, lightgreen);
+    -fx-background-size: 100% 150%;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: 0% 100%;
+    -fx-animation: gradientAnimation 3s infinite alternate;
 }
 .startButton{
     -fx-border-width: 2px 2px 2px 2px;

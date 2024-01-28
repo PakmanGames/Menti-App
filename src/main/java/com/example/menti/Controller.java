@@ -21,7 +21,12 @@ import java.util.List;
 import java.util.stream.Collectors;
 import com.jfoenix.controls.JFXTextArea;
 
-public class Controller {
+import javafx.fxml.Initializable;
+import javafx.scene.chart.*;
+import java.util.ResourceBundle;
+
+
+public class Controller implements Initializable{
    // List to store user input from checklists
    private List<String> checklistItems = new ArrayList<>();
 
@@ -32,6 +37,29 @@ public class Controller {
    public Pane check_list;
    @FXML
    public JFXTextArea suggestions;
+   @FXML
+   public LineChart LineChart;
+   public BarChart BarChart;
+   @FXML
+   public CategoryAxis x;
+
+   @FXML
+   public NumberAxis y;
+
+   @FXML
+   public void initialize(URL url, ResourceBundle rb) {
+      XYChart.Series series = new XYChart.Series();
+      series.setName("Data");
+
+      series.getData().add(new XYChart.Data("M", 24));
+      series.getData().add(new XYChart.Data("T", 50));
+      series.getData().add(new XYChart.Data("W", 10));
+      series.getData().add(new XYChart.Data("T", 20));
+      series.getData().add(new XYChart.Data("F", 1));
+
+      LineChart.getData().addAll(series);
+      BarChart.getData().addAll(series);
+   }
 
    // String to store the response received from gpt-3.5-turbo
    public String response;
@@ -110,10 +138,10 @@ public class Controller {
    public void startButton(ActionEvent event) {
       Stage stage = new Stage();
 
-      ScrollBack scrollBack = new ScrollBack();
+      MeditationGUI meditationGUI = new MeditationGUI();
 
       try {
-         scrollBack.start(stage);
+         meditationGUI.start(stage);
       } catch (Exception e) {
          System.out.println("Error");
       }
