@@ -32,6 +32,9 @@ public class Controller {
    @FXML
    public JFXTextArea suggestions;
 
+   public String[] infoArray = new String[100];
+   public String response;
+
    @FXML
    public void activityButton(ActionEvent e) {
       activitiesPane.setVisible(true);
@@ -90,8 +93,6 @@ public class Controller {
          // Add the entered text to the list
          checklistItems.add(text);
       });
-      // fetch();
-      suggestions.appendText("testing placeholder to make sure it works");
    }
 
    private double calculateYPosition(int index) {
@@ -115,14 +116,19 @@ public class Controller {
          System.out.println("Error");
       }
    }
+
    @FXML
-   private void fetch() {
+   public void generate_feedback(ActionEvent e){
+      String[] habits = getChecklistItemsArray();
+      fetch(habits);
+      suggestions.appendText(response);
+   }
+   @FXML
+   private void fetch(String[] habits) {
       // The input prompt that will be sent to the Spring Boot application
       String prompt = "You are a suggestions assistant that will take data from a mental health habit tracker app and provide feedback as well as suggestions to improve overall well being and mental health.\n" +
               "Give the suggestions in point form, one paragraph for encouragement of the activities listed and another for areas of improvement and suggestions. Limit your response in each point to be a maximum of 30 words. \n" +
               "Base your response on these following habbits: ";
-
-      String[] habits = getChecklistItemsArray();
 
       try {
          // Endpoint URL
@@ -155,7 +161,7 @@ public class Controller {
             try (InputStream is = connection.getInputStream()) {
                BufferedReader reader = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
                // Collects the response and puts it together as string and prints it
-               String response = reader.lines().collect(Collectors.joining("\n"));
+               response = reader.lines().collect(Collectors.joining("\n"));
                System.out.println("Response Body: " + response);
             }
          } else {

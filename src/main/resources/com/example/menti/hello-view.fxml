@@ -78,12 +78,12 @@
          <Pane fx:id="sleepPane" prefHeight="200.0" prefWidth="200.0" styleClass="sleepPane" stylesheets="@style.css" visible="false">
             <children>
                <BarChart layoutX="68.0" layoutY="-6.0" prefHeight="257.0" prefWidth="311.0">
-                 <xAxis>
-                   <CategoryAxis side="BOTTOM" />
-                 </xAxis>
-                 <yAxis>
-                   <NumberAxis side="LEFT" />
-                 </yAxis>
+                  <xAxis>
+                     <CategoryAxis side="BOTTOM" />
+                  </xAxis>
+                  <yAxis>
+                     <NumberAxis side="LEFT" />
+                  </yAxis>
                </BarChart>
                <ImageView fitHeight="31.0" fitWidth="28.0" layoutX="14.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
                   <image>
@@ -117,6 +117,7 @@
                      </JFXButton>
                   </children>
                </Pane>
+               <JFXTextArea fx:id="suggestions" layoutX="222.0" layoutY="227.0" prefHeight="171.0" prefWidth="243.0" styleClass="suggestion" />
                <Label layoutX="7.0" layoutY="14.0" text="Daily Activities" textAlignment="CENTER" wrapText="true">
                   <font>
                      <Font name="Kohinoor Telugu Bold" size="24.0" />
@@ -147,8 +148,7 @@
                      <Font name="System Bold Italic" size="13.0" />
                   </font>
                </Label>
-               <JFXTextArea fx:id="suggestions" layoutX="222.0" layoutY="231.0" prefHeight="166.0" prefWidth="243.0" styleClass="suggestion" />
-               <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="232.0" layoutY="239.0" pickOnBounds="true" preserveRatio="true">
+               <ImageView fitHeight="17.0" fitWidth="17.0" layoutX="266.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
                   <image>
                      <Image url="@images/ai.png" />
                   </image>
@@ -158,6 +158,11 @@
                      <Font name="Arial Bold Italic" size="18.0" />
                   </font>
                </Label>
+               <JFXButton fx:id="generate_feedback" layoutX="296.0" layoutY="367.0" prefHeight="22.0" prefWidth="74.0" onAction="#generate_feedback"  styleClass="generate_feedback" text="Generate">
+                  <font>
+                     <Font name="Apple Symbols" size="13.0" />
+                  </font>
+               </JFXButton>
             </children>
          </Pane>
          <!-- Add other panes similarly -->

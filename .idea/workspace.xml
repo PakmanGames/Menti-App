@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c1cecfc4-aca4-4c26-b605-ed5db6874720" name="Changes" comment="initial commit" />
+    <list default="true" id="c1cecfc4-aca4-4c26-b605-ed5db6874720" name="Changes" comment="initial commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/menti/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/menti/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/menti/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/menti/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/menti/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/menti/hello-view.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,8 +56,9 @@
     "Maven.Menti [install].executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Keewe/Downloads/Menti-main/Menti-main",
+    "last_opened_file_path": "C:/Users/Keewe/Downloads/MentiApp/Menti-main",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -116,6 +122,7 @@
       <workItem from="1706454380959" duration="50000" />
       <workItem from="1706454452318" duration="940000" />
       <workItem from="1706456190439" duration="1662000" />
+      <workItem from="1706457922952" duration="3076000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <option name="closed" value="true" />
